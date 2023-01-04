@@ -1,4 +1,5 @@
 import * as React from "react"
+import '../styles/global.css'
 
 const pageStyles = {
   color: "#232129",
@@ -125,7 +126,7 @@ const links = [
 
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
+    <main className='bg-[#1da1f2] text-white'>
       <h1 style={headingStyles}>
         Congratulations
         <br />

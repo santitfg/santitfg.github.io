@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import '../styles/global.css'
 
 const pageStyles = {
   color: "#232129",
@@ -25,7 +26,7 @@ const codeStyles = {
 
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
+    <main className='bg-[#1da1f2] text-white'>
       <h1 style={headingStyles}>Page not found</h1>
       <p style={paragraphStyles}>
         Sorry 😔, we couldn’t find what you were looking for.
