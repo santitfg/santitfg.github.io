@@ -3,8 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `santitfg.github.io`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Porfolio santiago fernandez`,
+    description: `porfolio pesonal orientado a programacion y arte`,
+    author: `@stfg.prof`,
+    siteUrl: `https://santitfg.github.io/`
   },
   plugins: ["gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-sitemap", 'gatsby-plugin-postcss',
   {
