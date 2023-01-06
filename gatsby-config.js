@@ -8,7 +8,7 @@ module.exports = {
     author: `@stfg.prof`,
     siteUrl: `https://santitfg.github.io/`
   },
-  plugins: ["gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-sitemap", 'gatsby-plugin-postcss',
+  plugins: ["gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-sitemap", 'gatsby-plugin-postcss','gatsby-transformer-remark' ,
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
@@ -28,5 +28,22 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
-  }]
+  }, 
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "posteos",
+      "path": "./src/posteos/"
+    },
+    __key: "posteos"
+  }
+  , {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "templates",
+      "path": "./src/templates/"
+    },
+    __key: "templates"
+  }, 
+]
 };
