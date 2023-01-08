@@ -1,7 +1,11 @@
-const path = require(`path`)
+
+const path = require(`path`);
 const { createFilePath } = require("gatsby-source-filesystem");
+const kebabCase =require( "lodash/kebabCase");
+
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
+  //funcion que por cada nodo creado si es markdown le asigna un campo de slug (la url)
   const { createNodeField } = actions;
   if (node.internal.type === "MarkdownRemark") {
     const slug = createFilePath({ node, getNode, basePath: "posteos" });
@@ -10,36 +14,72 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 };
 
 exports.createPages = ({ graphql, actions }) => {
+  //funcion que crea paginas a partir de una consulta graphql sobre los markdown y y les asigna un template (layout)
+  const tagTemplate = path.resolve("src/templates/template-tags.jsx")
+
   const { createPage } = actions;
-  const templateFile = path.resolve('src/templates/template.jsx');
   return graphql(`
     query {
-      allMarkdownRemark {
+      postsRemark: allMarkdownRemark (
+        sort: { frontmatter: { date: DESC }}
+        limit: 2000
+      ) {        
         edges {
           node {
             fields {
               slug
             }
-            frontmatter{
+            frontmatter {
               layout
             }
           }
         }
       }
+      tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: { frontmatter: { tags: SELECT } }) {
+          fieldValue
+        }
+      }
     }
   `).then((result) => {
     if (result.errors) {
-      throw result.errors
+      throw result.errors;
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    /*
+      if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+    */
+    const posts = result.data.postsRemark.edges;
+    // Create post detail pages
+    posts.forEach(({ node }) => {
       createPage({
-          path: node.fields.slug,
-          component:path.resolve(`./src/templates/${node.frontmatter.layout || 'template'}.jsx`),
-          context: {
-            slug: node.fields.slug,
-          },
+        path: node.fields.slug,
+        component: path.resolve(
+          `./src/templates/${node.frontmatter.layout || "template"}.jsx`
+        ),
+        context: {
+          slug: node.fields.slug,
+        },
+      });
+    });
+
+    // Extract tag data from query
+    const tags = result.data.tagsGroup.group;
+
+    // Make tag pages
+    tags.forEach((tag) => {
+      createPage({
+        path: `/tags/${kebabCase(tag.fieldValue)}/`,
+        component: tagTemplate,
+        context: {
+          tag: tag.fieldValue,
+        },
       });
     });
   });
+
+
 };
