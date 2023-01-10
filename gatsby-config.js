@@ -33,9 +33,9 @@ module.exports = {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "posteos",
-      "path": "./src/posteos/"
+      "path": "./src/content/"
     },
-    __key: "posteos"
+    __key: "content"
   }
   , {
     resolve: 'gatsby-source-filesystem',

@@ -1,16 +1,21 @@
 import React from "react";
 import { Link } from "gatsby";
-import { useState } from "react"; // import state
+import {useState} from "react"; 
 import logoGitLab from "../images/gitlab-logo-500.png";
 import logoGiHub from "../images/github-mark.svg";
 
 const Navbar = () => {
-  const [estadoMenuHamburguesa, setMenuHamburguesa] = useState(false);
+  // variable algo tosca para que el menu hamburguesa comience cerrado si la pantalla es sm sino estaria abierto y seria el menu comun
+  //por ahi tendria que desacoplar el nabvar largo y el menu en sm
+  var estadoInicial=false; 
+  if(window.innerWidth<=640)estadoInicial=true;
+
+  const [estadoMenuHamburguesa, setMenuHamburguesa] = useState(estadoInicial);
 
   const toggleHamburguesa = () => {
     setMenuHamburguesa(!estadoMenuHamburguesa);
-    console.log(estadoMenuHamburguesa);
   };
+
   return (
     <>
       {/* justify-around  items-center justify-between flex*/}

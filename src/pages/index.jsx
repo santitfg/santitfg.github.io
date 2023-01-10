@@ -7,15 +7,15 @@ const IndexPage = ({ data }) => {
     <Layout titulo="jolis">
       <main>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <>
-            <Link to={node.fields.slug}>
+          <div  key={node.fields.slug} >
+            <Link to={node.fields.slug} >
               <div className="hover:bg-red-400">
                 <h1>{node.frontmatter.title}</h1>
               <h3>{node.frontmatter.date}</h3>
               <p>{node.excerpt}</p>
               </div>
             </Link>
-          </>
+          </div >
         ))}
       </main>
     </Layout>
