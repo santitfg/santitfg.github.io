@@ -1,26 +1,17 @@
-import React from 'react';
-import {  Link } from "gatsby";
+import React from "react";
 
-import '../styles/global.css'
-
+import "../styles/global.css";
+import Navbar from "./navbar";
 const Layout = (props) => {
+  return (
+    <>
+      <Navbar />
+      <main className="container mx-auto text-justify">
+      <h1 className="bg-[#1da1f2] text-white"> {props.titulo}</h1>
 
-    return (
-
-        < >
-        <nav><ul>
-            <li>
-            <Link to="/" className='hover:bg-green-800'>index</Link>
-
-            </li>
-            <li>
-            <Link to="/tags" className='hover:bg-green-800'>tags</Link>
-            </li>
-        </ul>
-        </nav>
-        <h1 className='bg-[#1da1f2] text-white' > {props.titulo}</h1>
-            {props.children}
-        </>
-    );
+      {props.children}
+      </main>
+    </>
+  );
 };
 export default Layout;

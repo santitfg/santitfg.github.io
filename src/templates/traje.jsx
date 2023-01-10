@@ -9,10 +9,9 @@ export default  function BlogPostTemplate({
     const { frontmatter, html } = markdownRemark
     return (
 
-    <Layout >
-        <div>
-          <h1>{frontmatter.title}</h1>
-          <h1>holaaaaaaaaaaaaaaaaaaaa</h1>
+      <Layout titulo={frontmatter.title} >
+      <div>
+          <h1>ESTO ES UNA VARIANTE DE TEMPLATE</h1>
           <h2>{frontmatter.date}</h2>
           <div
             dangerouslySetInnerHTML={{ __html: html }}

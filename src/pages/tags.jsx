@@ -1,14 +1,13 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 
 // Utilities
-import kebabCase from "lodash/kebabCase"
+import kebabCase from "lodash/kebabCase";
 
 // Components
-import { Link, graphql } from "gatsby"
-
+import { Link, graphql } from "gatsby";
+import Layout from "../components/layout";
 // export const Head = () => <title>{title}</title>;
-
 
 const TagsPage = ({
   data: {
@@ -18,11 +17,10 @@ const TagsPage = ({
     // },
   },
 }) => (
+  <Layout titulo="Tags">
   <div>
-    <div>
-      <h1>Tags</h1>
       <ul>
-        {group.map(tag => (
+        {group.map((tag) => (
           <li key={tag.fieldValue}>
             <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
               {tag.fieldValue} ({tag.totalCount})
@@ -30,9 +28,9 @@ const TagsPage = ({
           </li>
         ))}
       </ul>
-    </div>
   </div>
-)
+  </Layout>
+);
 
 TagsPage.propTypes = {
   data: PropTypes.shape({
@@ -50,9 +48,9 @@ TagsPage.propTypes = {
       }),
     }),
   }),
-}
+};
 
-export default TagsPage
+export default TagsPage;
 
 export const pageQuery = graphql`
   query {
@@ -62,10 +60,10 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(limit: 2000) {
-      group(field: { frontmatter: { tags: SELECT }}) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
       }
     }
   }
-`
+`;
