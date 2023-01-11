@@ -6,44 +6,63 @@ module.exports = {
     title: `Porfolio santiago fernandez`,
     description: `porfolio pesonal orientado a programacion y arte`,
     author: `@stfg.prof`,
-    siteUrl: `https://santitfg.github.io/`
+    siteUrl: `https://santitfg.github.io/`,
   },
-  plugins: ["gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-sitemap", 'gatsby-plugin-postcss','gatsby-transformer-remark' ,
-  {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      "icon": "src/images/icon.png"
-    }
-  }, "gatsby-plugin-mdx", "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
+  plugins: [
+    "gatsby-plugin-google-gtag",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-postcss",
+    "gatsby-plugin-mdx",
+    "gatsby-transformer-remark",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.png",
+      },
     },
-    __key: "images"
-  }, {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/images/",
+      },
+      __key: "images",
     },
-    __key: "pages"
-  }, 
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "posteos",
-      "path": "./src/content/"
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: "./src/pages/",
+      },
+      __key: "pages",
     },
-    __key: "content"
-  }
-  , {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "templates",
-      "path": "./src/templates/"
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "content",
+        path: "./src/content/",
+      },
+      __key: "content",
     },
-    __key: "templates"
-  }, 
-]
+    //para mantenerlo simple sin ohace falta no voy a segmentar contenido de imgs generales
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "content-images",
+        path: "./src/content/img",
+      },
+      __key: "content-img",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "templates",
+        path: "./src/templates/",
+      },
+      __key: "templates",
+    },
+  ],
 };

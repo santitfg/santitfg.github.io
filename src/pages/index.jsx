@@ -1,21 +1,15 @@
 import * as React from "react";
 import "../styles/global.css";
 import Layout from "../components/layout";
-import { graphql, Link } from "gatsby";
+import CardPreview from "../components/cardpreview";
+
+import { graphql } from "gatsby";
 const IndexPage = ({ data }) => {
   return (
     <Layout titulo="jolis">
       <main>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div  key={node.fields.slug} >
-            <Link to={node.fields.slug} >
-              <div className="hover:bg-red-400">
-                <h1>{node.frontmatter.title}</h1>
-              <h3>{node.frontmatter.date}</h3>
-              <p>{node.excerpt}</p>
-              </div>
-            </Link>
-          </div >
+          <CardPreview data={node} key={node.fields.slug} />
         ))}
       </main>
     </Layout>
@@ -36,6 +30,12 @@ export const query = graphql`
           frontmatter {
             title
             date
+            layout
+            image {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
           }
           excerpt
         }

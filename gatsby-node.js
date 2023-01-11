@@ -8,7 +8,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   //funcion que por cada nodo creado si es markdown le asigna un campo de slug (la url)
   const { createNodeField } = actions;
   if (node.internal.type === "MarkdownRemark") {
-    const slug = createFilePath({ node, getNode, basePath: "posteos" });
+    const slug = createFilePath({ node, getNode, basePath: "content" });
     createNodeField({ node, value: slug, name: "slug" });
   }
 };
