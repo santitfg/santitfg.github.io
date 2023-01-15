@@ -10,7 +10,7 @@ const CardPreview = (props) => {
   if (data.frontmatter.image) {
     //esto por ahi es un poco rebuscado y podria hacer uan ternaria pero me parece que lo vuelve poco legible
     imagen = (
-      <GatsbyImage
+      <GatsbyImage className=""
         image={data.frontmatter.image.childImageSharp.gatsbyImageData}
         alt={data.frontmatter.title}
       />
@@ -18,18 +18,18 @@ const CardPreview = (props) => {
   }
 
   return (
-    <>
-      <Link to={data.fields.slug} className="relative w-[500px]">
-        <div className=" px-4 py-2 bg-gray-800  hover:bg-red-400">
+        <div className=" bg-gray-800  hover:bg-red-400 inline-block m-2">
+        <Link to={data.fields.slug} className=" ">
+
           <h1 className="text-xl text-white font-bold">
             {data.frontmatter.title}
           </h1>
           {imagen}
           <h3>{data.frontmatter.date}</h3>
-          <p className="mt-2 text-sm text-gray-300">{data.excerpt}</p>
+          {/* <p className="mt-2 text-sm text-gray-300">{data.excerpt}</p> */}
+          </Link>
+
         </div>
-      </Link>
-    </>
   );
 };
 

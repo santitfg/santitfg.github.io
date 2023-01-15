@@ -7,11 +7,12 @@ import { graphql } from "gatsby";
 const IndexPage = ({ data }) => {
   return (
     <Layout titulo="jolis">
-      <main>
+      {/* x grid o por flex?? de ser grid el ultimo elem impar? */}
+      < div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <CardPreview data={node} key={node.fields.slug} />
         ))}
-      </main>
+      </div>
     </Layout>
   );
 };

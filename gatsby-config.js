@@ -13,7 +13,7 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-postcss",
-    "gatsby-plugin-mdx",
+    // "gatsby-plugin-mdx",
     "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
@@ -47,15 +47,14 @@ module.exports = {
       },
       __key: "content",
     },
-    //para mantenerlo simple sin ohace falta no voy a segmentar contenido de imgs generales
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "content-images",
-        path: "./src/content/img",
-      },
-      __key: "content-img",
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "content-images",
+    //     path: "./src/content/img",
+    //   },
+    //   __key: "content-img",
+    // },
     {
       resolve: "gatsby-source-filesystem",
       options: {
