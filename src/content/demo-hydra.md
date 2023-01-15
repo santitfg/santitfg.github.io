@@ -5,7 +5,7 @@ tags: ["es", "hydra", "programacion"]
 image: img/mano.jpg
 ---
 
-# [Demo aplicacion web](https://santitfg.github.io/) 
+# [Demo aplicacion web](https://santitfg.github.io/hydra-hand) 
 ## Basada en [Hydra](https://hydra.ojack.xyz/) y [Mediapipe](https://google.github.io/mediapipe/solutions/hands.html)
 
 
