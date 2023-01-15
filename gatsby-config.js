@@ -9,7 +9,7 @@ module.exports = {
     siteUrl: `https://santitfg.github.io/`,
   },
   plugins: [
-    "gatsby-plugin-google-gtag",
+    // "gatsby-plugin-google-gtag",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-postcss",

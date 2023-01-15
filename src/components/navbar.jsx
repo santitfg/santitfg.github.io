@@ -8,7 +8,7 @@ const Navbar = () => {
   // variable algo tosca para que el menu hamburguesa comience cerrado si la pantalla es sm sino estaria abierto y seria el menu comun
   //por ahi tendria que desacoplar el nabvar largo y el menu en sm
   var estadoInicial=false; 
-  if(window.innerWidth<=640)estadoInicial=true;
+  // if(window.innerWidth<=640)estadoInicial=true;
 
   const [estadoMenuHamburguesa, setMenuHamburguesa] = useState(estadoInicial);
 
