@@ -1,42 +1,30 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
+import CardPreview from "../components/cardpreview";
 
 // Components
-import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
+import { Link, graphql } from "gatsby";
+import Layout from "../components/layout";
 
 const Tags = ({ pageContext, data }) => {
-  const { tag } = pageContext
-  const { edges, totalCount } = data.allMarkdownRemark
+  const { tag } = pageContext;
+  const { edges } = data.allMarkdownRemark;
   // const tagHeader = `${totalCount} post${
   //   totalCount === 1 ? "" : "s"
   // } tagged with "${tag}"`
 
   return (
     <Layout titulo={tag}>
-    <div>
-      
-      {/* <h1>{tagHeader}</h1> */}
-      <ul>
-        {edges.map(({ node }) => {
-          const { slug } = node.fields
-          const { title } = node.frontmatter
-          return (
-            <li key={slug}>
-              <Link to={slug}>{title}</Link>
-            </li>
-          )
-        })}
-      </ul>
-      {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
-      <Link to="/tags">All tags</Link>
-    </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <CardPreview data={node} key={node.fields.slug} />
+          ))}
+        </div>
+
+        {/* <Link to="/tags">All tags</Link> */}
     </Layout>
-  )
-}
+  );
+};
 
 Tags.propTypes = {
   pageContext: PropTypes.shape({
@@ -59,18 +47,17 @@ Tags.propTypes = {
       ),
     }),
   }),
-}
+};
 
-export default Tags
+export default Tags;
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query ($tag: String) {
     allMarkdownRemark(
       limit: 2000
-      sort: { frontmatter: { date: DESC }}
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
-      totalCount
       edges {
         node {
           fields {
@@ -78,9 +65,16 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            date
+            layout
+            image {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
           }
         }
       }
     }
   }
-`
+`;

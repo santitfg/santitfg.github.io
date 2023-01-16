@@ -23,6 +23,7 @@ export const Head = () => <title>Home Page</title>;
 export const query = graphql`
   query {
     allMarkdownRemark {
+      totalCount
       edges {
         node {
           fields {
@@ -38,6 +39,7 @@ export const query = graphql`
               }
             }
           }
+
           excerpt
         }
       }
