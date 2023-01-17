@@ -24,8 +24,8 @@ const CardPreview = (props) => {
   return (
     <div className="relative inline-block  rounded-3xl  hover:bg-red-400 ">
       <Link to={data.fields.slug} className=" ">
+        {/* lo que esta fallando en limiat esta tarjeta es la forma de anidar el link y el absoluto, a su vez se pierde la href al modificar el orden de anidado  */}
         <div className="absolute  z-10  opacity-0 hover:opacity-100 inset-0  w-full h-full  ">
-          {/* <div className="bg-slate-400 w-full opacity-60 absolute bottom-0 p-12"></div> */}
           <div className=" absolute text-xl rounded-b-3xl text-txt-principal text-center font-bold inset-x-0 bottom-0 p-12 gradiente-principal ">
             {/* <h1></h1> <h2></h2>*/}
             {data.frontmatter.title}
