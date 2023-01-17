@@ -11,9 +11,11 @@ const CardPreview = (props) => {
     //esto por ahi es un poco rebuscado y podria hacer uan ternaria pero me parece que lo vuelve poco legible
 
     imagen = (
-      <div className="relative object-cover pb-1/2 ">
+      <div 
+      // className="relative object-cover pb-1/2 "
+      >
         <GatsbyImage
-          className=" absolute w-full h-full object-cover rounded-3xl "
+          // className=" absolute w-full h-full object-cover rounded-3xl "
           image={data.frontmatter.image.childImageSharp.gatsbyImageData}
           alt={data.frontmatter.title}
         />
@@ -22,7 +24,7 @@ const CardPreview = (props) => {
   }
 
   return (
-    <div className="relative inline-block  rounded-3xl   hover:bg-red-400 ">
+    <div className="relative inline-block  rounded-3xl  hover:bg-red-400 ">
       <Link to={data.fields.slug} className=" ">
         <div className="absolute  z-10  opacity-0 hover:opacity-100 inset-0  w-full h-full  ">
           {/* <div className="bg-slate-400 w-full opacity-60 absolute bottom-0 p-12"></div> */}
