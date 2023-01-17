@@ -4,7 +4,7 @@
 /* @tailwind components; */
 @import "./components.css";
 
-@import "./unreset.css";
+@import "./unreset.scss";
 @import "./gradientes.css";
 /* @tailwind utilities; */
 @import "./utilities.css";

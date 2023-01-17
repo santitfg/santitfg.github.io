@@ -3,3 +3,8 @@
     @apply bg-gradient-to-b from-transparent to-slate-50;
   }
 } ;
+
+@layer components {.video-container{
+  position: relative;
+  padding-bottom: 56.25%;
+}}
