@@ -42,7 +42,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/tags/arte/"
-                className="block mt-4 sm:inline-block sm:mt-0 text-teal hover:text-white mr-4 "
+                className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4 "
               >
                 arte
               </Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/tags/programacion"
-                className="block mt-4 sm:inline-block sm:mt-0 text-teal hover:text-white mr-4"
+                className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
               >
                 programacion
               </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/about"
-                className="block mt-4 sm:inline-block sm:mt-0 text-teal hover:text-white mr-4"
+                className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
               >
                 about
               </Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/tags"
-                className="block mt-4 sm:inline-block sm:mt-0 text-teal hover:text-white mr-4"
+                className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
               >
                 tags
               </Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
             href="https://gitlab.com/stfg.prof"
             target="_blank"
             rel="noopener noreferrer"
-            className="block mt-4 sm:inline-block sm:mt-0 text-teal hover:text-white mr-4"
+            className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
           >
             <img src={logoGitLab} alt="Gitlab" className="w-8 h-8"/>
           </a>
@@ -91,7 +91,7 @@ const Navbar = () => {
             href="https://github.com/santitfg"
             target="_blank"
             rel="noopener noreferrer"
-            className="block mt-4 sm:inline-block sm:mt-0 text-teal hover:text-white mr-4"
+            className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
           >
             <img src={logoGiHub} alt="Github"  className="w-8 h-8"/>
           </a>

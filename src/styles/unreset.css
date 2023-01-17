@@ -14,10 +14,10 @@
     box-sizing: content-box;
   }
 
-  body {
+  /* body {
     margin: 8px;
     line-height: normal;
-  }
+  } */
 
   p {
     margin: 1em 0;
