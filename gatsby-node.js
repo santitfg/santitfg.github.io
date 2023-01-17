@@ -58,7 +58,9 @@ exports.createPages = ({ graphql, actions }) => {
       createPage({
         path: node.fields.slug,
         component: path.resolve(
-          `./src/templates/${node.frontmatter.layout || "template"}.jsx`
+          `./src/templates/template.jsx`
+
+          // `./src/templates/${node.frontmatter.layout || "template"}.jsx`
         ),
         context: {
           slug: node.fields.slug,

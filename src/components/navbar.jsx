@@ -39,7 +39,7 @@ const Navbar = () => {
               (estadoMenuHamburguesa ? " hidden" : "block sm:flex")
             }
           >
-            <li>
+            {/* <li>
               <Link
                 to="/tags/arte/"
                 className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4 "
@@ -54,23 +54,23 @@ const Navbar = () => {
               >
                 programacion
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 to="/about"
-                className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
+                className="block mt-4 sm:inline-block sm:mt-0 text-teal gradiente-link  mr-4"
               >
-                about
+                Sobre mi
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/tags"
                 className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
               >
                 tags
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <ul

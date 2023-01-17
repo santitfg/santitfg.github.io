@@ -9,5 +9,4 @@ image: img/fractal.png
 
 ![Alt ejemplo-0](./img/ondas.png)
 
-`youtube:https://www.youtube.com/embed/2Xc9gXyf2G4`
 `youtube:https://www.youtube.com/embed/o1hPdOIMN-E`
