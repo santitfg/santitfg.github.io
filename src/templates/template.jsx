@@ -12,7 +12,7 @@ export default  function BlogPostTemplate({
     <Layout titulo={frontmatter.title} >
         <div>
           <h2>{frontmatter.date}</h2>
-          <div className="text"
+          <div className="text unreset"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>

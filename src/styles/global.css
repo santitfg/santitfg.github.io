@@ -1,9 +1,17 @@
-@tailwind base;
+/* @tailwind base; */
+@import "./base.css";
+/* 
 @layer base {
     a {
       @apply text-orange-400;
       @apply hover:underline;
     }
-  }
-@tailwind components;
-@tailwind utilities;
+  } */
+/* @tailwind components; */
+@import "./components.css";
+
+@import "./unreset.css";
+/* @tailwind utilities; */
+@import "./utilities.css";
+
+/* @import "./unreset" */
