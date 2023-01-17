@@ -1,7 +1,7 @@
 ---
 date: "2022-11-24"
 title: "mdx ta full"
-tags: ["es", "hydra", "programacion"]
+tags: ["es", "hydra", "art"]
 image: img/fractal.png
 ---
 

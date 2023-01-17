@@ -1,0 +1,5 @@
+@layer components {
+  .gradiente-principal {
+    @apply bg-gradient-to-b from-transparent to-slate-50;
+  }
+} ;

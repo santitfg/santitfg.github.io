@@ -1,5 +1,5 @@
 // import { StaticImage } from "gatsby-plugin-image";
-import {  Link  } from "gatsby";
+import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 
@@ -9,27 +9,34 @@ const CardPreview = (props) => {
 
   if (data.frontmatter.image) {
     //esto por ahi es un poco rebuscado y podria hacer uan ternaria pero me parece que lo vuelve poco legible
+
     imagen = (
-      <GatsbyImage className=""
-        image={data.frontmatter.image.childImageSharp.gatsbyImageData}
-        alt={data.frontmatter.title}
-      />
+      <div className="relative object-cover pb-1/2 ">
+        <GatsbyImage
+          className=" absolute w-full h-full object-cover rounded-3xl "
+          image={data.frontmatter.image.childImageSharp.gatsbyImageData}
+          alt={data.frontmatter.title}
+        />
+      </div>
     );
   }
 
   return (
-        <div className=" bg-gray-800  hover:bg-red-400 inline-block m-2">
-        <Link to={data.fields.slug} className=" ">
-
-          <h1 className="text-xl text-white font-bold">
+    <div className="relative inline-block  rounded-3xl   hover:bg-red-400 ">
+      <Link to={data.fields.slug} className=" ">
+        <div className="absolute  z-10  opacity-0 hover:opacity-100 inset-0  w-full h-full  ">
+          {/* <div className="bg-slate-400 w-full opacity-60 absolute bottom-0 p-12"></div> */}
+          <div className=" absolute text-xl rounded-b-3xl text-txt-principal text-center font-bold inset-x-0 bottom-0 p-12 gradiente-principal ">
+            {/* <h1></h1> <h2></h2>*/}
             {data.frontmatter.title}
-          </h1>
-          {imagen}
-          <h3>{data.frontmatter.date}</h3>
-          {/* <p className="mt-2 text-sm text-gray-300">{data.excerpt}</p> */}
-          </Link>
-
+          </div>
         </div>
+        {imagen}
+
+        {/* <h3>{data.frontmatter.date}</h3> */}
+        {/* <p className="mt-2 text-sm text-gray-300">{data.excerpt}</p> */}
+      </Link>
+    </div>
   );
 };
 
