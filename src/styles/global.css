@@ -1,6 +1,8 @@
 /* @tailwind base; */
 @import "./base.css";
 /*  */
+
+@import "./fonts.css";
 /* @tailwind components; */
 @import "./components.css";
 
@@ -10,3 +12,10 @@
 @import "./utilities.css";
 
 /* @import "./unreset" */
+
+
+@layer base {
+    html {
+      font-family: "leluja";
+    }
+  }

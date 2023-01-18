@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import {useState} from "react"; 
 import logoGitLab from "../images/gitlab-logo-500.png";
 import logoGiHub from "../images/github-mark.svg";
+import icono from "../images/icon.png";
 
 const Navbar = () => {
   // variable algo tosca para que el menu hamburguesa comience cerrado si la pantalla es sm sino estaria abierto y seria el menu comun
@@ -19,11 +20,13 @@ const Navbar = () => {
   return (
     <>
       {/* justify-around  items-center justify-between flex*/}
-      <nav className=" sm:flex flex-wrap  px-4  md:px-8 lg:px-10 justify-between">
+      <nav className=" sm:flex flex-wrap  pb-4 pt-8  md:px-8 lg:px-10 justify-between">
         <div className="block sm:flex ">
           <div className="flex justify-between  ">
             <Link to="/" className="p-4  font-bold ">
-              <span className=" text-2xl">ICO</span>
+              {/* <span className=" text-2xl">ICO</span> */}
+              <img src={icono} alt="icono"  className="w-14 h-14"/>
+
             </Link>
             <button
               onClick={toggleHamburguesa}
@@ -44,7 +47,7 @@ const Navbar = () => {
                 to="/tags/arte/"
                 className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4 "
               >
-                arte
+                haceres
               </Link>
             </li>
             <li>
@@ -85,7 +88,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
           >
-            <img src={logoGitLab} alt="Gitlab" className="w-8 h-8"/>
+            <img src={logoGitLab} alt="Gitlab" className="w-10 h-10"/>
           </a>
           <a
             href="https://github.com/santitfg"
@@ -93,7 +96,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
           >
-            <img src={logoGiHub} alt="Github"  className="w-8 h-8"/>
+            <img src={logoGiHub} alt="Github"  className="w-10 h-10"/>
           </a>
         </ul>
       </nav>

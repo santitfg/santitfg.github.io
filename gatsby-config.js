@@ -91,14 +91,14 @@ module.exports = {
       },
       __key: "content",
     },
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     name: "content-images",
-    //     path: "./src/content/img",
-    //   },
-    //   __key: "content-img",
-    // },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "assets",
+        path: "./src/assets/",
+      },
+      __key: "assets",
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
