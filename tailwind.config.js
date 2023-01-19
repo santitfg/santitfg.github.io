@@ -44,6 +44,10 @@ module.exports = {
         "10/12": "83.333333%",
         "11/12": "91.666667%",
       },
+
+      // transitionTimingFunction: {
+      //   "out-log:": "cubic-bezier(0.0, 1, 0.0, 1)"
+      // }
     },
   },
   plugins: [],

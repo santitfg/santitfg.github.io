@@ -22,7 +22,7 @@ export default IndexPage;
 export const Head = () => <title>Home Page</title>;
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {frontmatter: {date: DESC}})  {
       totalCount
       edges {
         node {

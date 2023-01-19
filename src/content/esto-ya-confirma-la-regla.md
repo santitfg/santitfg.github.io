@@ -1,5 +1,5 @@
 ---
-date: "2022-11-24"
+date: "2023-11-24"
 title: "sarcastico"
 tags: ["es", "hydra", "programacion"]
 image: img/fractal.png

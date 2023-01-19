@@ -1,5 +1,5 @@
 ---
-date: "2022-11-24"
+date: "2022-10-24"
 title: "mdx ta full"
 tags: ["es", "hydra", "art"]
 image: img/fractal.png
