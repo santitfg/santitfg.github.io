@@ -13,7 +13,7 @@ const CardPreview = (props) => {
     imagen = (
       // <div      className="relative object-cover pb-1/2 ">
         <GatsbyImage
-          className="  w-full h-full object-cover rounded-3xl "
+          className="  w-full h-full object-cover rounded-none md:rounded-3xl  "
           image={data.frontmatter.image.childImageSharp.gatsbyImageData}
           alt={data.frontmatter.title}
         />
@@ -22,19 +22,15 @@ const CardPreview = (props) => {
   }
 
   return (
-    <div className="relative inline-block  rounded-3xl  hover:bg-red-400 ">
+    <div className="relative inline-block  rounded-none md:rounded-3xl ">
       <Link to={data.fields.slug} className=" ">
         {/* lo que esta fallando en limiat esta tarjeta es la forma de anidar el link y el absoluto, a su vez se pierde la href al modificar el orden de anidado  */}
-        <div className="absolute z-10 inset-0  w-full h-full animacion-tarjeta ">
-          <div className=" absolute text-xl rounded-b-3xl text-txt-principal text-center font-bold inset-x-0 bottom-0 p-12 gradiente-principal ">
-            {/* <h1></h1> <h2></h2>*/}
+        <div className="absolute z-10 inset-0  w-full h-full animacion-tarjeta rounded-none md:rounded-3xl gradiente-principal flex justify-center  items-center">
+          <div className="  text-xl  text-txt-principal text-justify font-bold m-7  ">
             {data.frontmatter.title}
           </div>
         </div>
         {imagen}
-
-        {/* <h3>{data.frontmatter.date}</h3> */}
-        {/* <p className="mt-2 text-sm text-gray-300">{data.excerpt}</p> */}
       </Link>
     </div>
   );

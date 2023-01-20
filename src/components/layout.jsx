@@ -9,11 +9,9 @@ const Layout = (props) => {
 
     </header>
     <div className="p-5"></div>
-      <main className="container mx-auto text-justify ">
       {/* <h1 className="bg-[#1da1f2] text-white"> {props.titulo}</h1> */}
 
       {props.children}
-      </main>
       
       <footer  className="container mx-auto text-justify" >
       <div className="p-4"></div>

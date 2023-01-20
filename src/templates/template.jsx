@@ -9,13 +9,13 @@ export default function BlogPostTemplate({
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout titulo={frontmatter.title}>
-      <div>
+      <main className="container mx-auto text-justify ">
         {/* <h2>{frontmatter.date}</h2> */}
         <div
-          className="text unreset"
+          className=" unreset"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-      </div>
+      </main>
     </Layout>
   );
 }

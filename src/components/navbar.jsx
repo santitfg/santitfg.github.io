@@ -5,6 +5,8 @@ import logoGitLab from "../images/gitlab-logo-500.png";
 import logoGiHub from "../images/github-mark.svg";
 import icono from "../images/icon.png";
 
+
+// en caso de tener scrollbar, la barra se achica, deberia hacer algun cambio para que esto no pase, pero no es prioritario en este momento
 const Navbar = () => {
   // variable algo tosca para que el menu hamburguesa comience cerrado si la pantalla es sm sino estaria abierto y seria el menu comun
   //por ahi tendria que desacoplar el nabvar largo y el menu en sm

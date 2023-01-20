@@ -14,13 +14,14 @@ const Tags = ({ pageContext, data }) => {
   // } tagged with "${tag}"`
 
   return (
-    <Layout titulo={tag}>
+    <Layout >
+      <main>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <CardPreview data={node} key={node.fields.slug} />
           ))}
         </div>
-
+        </main>
         {/* <Link to="/tags">All tags</Link> */}
     </Layout>
   );

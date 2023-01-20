@@ -17,8 +17,8 @@ const TagsPage = ({
     // },
   },
 }) => (
-  <Layout titulo="Tags">
-  <div>
+  <Layout >
+      <main className="md:max-w-[75%] mx-auto text-justify">
       <ul>
         {group.map((tag) => (
           <li key={tag.fieldValue}>
@@ -28,7 +28,7 @@ const TagsPage = ({
           </li>
         ))}
       </ul>
-  </div>
+  </main>
   </Layout>
 );
 

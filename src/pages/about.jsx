@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 const IndexPage = ({ data }) => {
   return (
     <Layout titulo="ABOUT">
-      <main>
+      <main className="max-w-[75%] mx-auto text-justify">
        <div>
         <p>ESTO EXPLICA ALGO</p>
         <p><span className="font-chivo">con una fuente</span> sin la fuente</p>

@@ -1,5 +1,5 @@
 /* @tailwind base; */
-@import "./base.css";
+@import "./base.scss";
 /*  */
 
 @import "./fonts.css";
@@ -7,7 +7,7 @@
 @import "./components.css";
 
 @import "./unreset.scss";
-@import "./gradientes.css";
+@import "./gradientes.scss";
 /* @tailwind utilities; */
 @import "./utilities.css";
 

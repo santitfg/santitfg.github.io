@@ -4,10 +4,10 @@ import '../styles/global.css'
 
 const NotFoundPage = () => {
   return (
-    <main className='bg-[#1da1f2] text-white'>
-      <h1 >Page not found</h1>
+    <main className="max-w-[75%] mx-auto text-justify">
+    <h1 >Page not found</h1>
       <p >
-        Sorry 😔, we couldn’t find what you were looking for.
+        Sorry 😔, we couldn't find what you were looking for.
 
         <br />
         <Link to="/">Go home</Link>.
