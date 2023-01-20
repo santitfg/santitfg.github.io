@@ -14,7 +14,7 @@ module.exports = {
 
       colors: {
         principal: "#3f3cbb",
-        "txt-principal": "#110011",
+        "col-txt": "#444444",
       },
       spacing: {
         "1/2": "50%",

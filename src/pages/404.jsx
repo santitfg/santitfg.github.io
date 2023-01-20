@@ -10,7 +10,7 @@ const NotFoundPage = () => {
         Sorry 😔, we couldn't find what you were looking for.
 
         <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/">volver al inicio</Link>.
       </p>
     </main>
   )

@@ -26,7 +26,7 @@ const CardPreview = (props) => {
       <Link to={data.fields.slug} className=" ">
         {/* lo que esta fallando en limiat esta tarjeta es la forma de anidar el link y el absoluto, a su vez se pierde la href al modificar el orden de anidado  */}
         <div className="absolute z-10 inset-0  w-full h-full animacion-tarjeta rounded-none md:rounded-3xl gradiente-principal flex justify-center  items-center">
-          <div className="  text-xl  text-txt-principal text-justify font-bold m-7  ">
+          <div className="  text-xl  text-col-txt text-justify font-bold m-14  ">
             {data.frontmatter.title}
           </div>
         </div>
