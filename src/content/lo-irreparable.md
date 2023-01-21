@@ -1,8 +1,8 @@
 ---
-date: "2018-06-24"
+date: "2018-06-20"
 title: "Lo irreparable o la entrega"
 tags: ["es", "hydra", "art"]
-image: img/fractal.png
+image: img/lo irreparable o la entrega/registro-5.jpg
 ---
 
 # Lo irreparable o la entrega

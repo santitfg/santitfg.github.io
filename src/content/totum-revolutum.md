@@ -2,7 +2,7 @@
 date: "2018-12-03"
 title: "Totum Revolutum"
 tags: ["es", "hydra", "art"]
-image: img/fractal.png
+image: img/totum/caratula.jpg
 ---
 
 # Lo irreparable o la entrega

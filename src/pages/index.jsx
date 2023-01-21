@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => {
       {/* x grid o por flex?? de ser grid el ultimo elem impar? */}
       < div className="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-1 md:gap-4 ">
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <CardPreview data={node} key={node.fields.slug}  />
+          <CardPreview data={node} key={node.fields.slug} />
         ))}
       </div>
       </main>

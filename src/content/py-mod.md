@@ -2,7 +2,7 @@
 date: "2022-06-24"
 title: "En Busqueda de un Glitch 3D"
 tags: ["es", "hydra", "art"]
-image: img/fractal.png
+image: img/py-mod/13.jpg
 ---
 
 # esto-importa-img

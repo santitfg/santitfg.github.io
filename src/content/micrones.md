@@ -1,8 +1,8 @@
 ---
-date: "2017-06-24"
+date: "2018-06-23"
 title: "Micrones"
 tags: ["es", "hydra", "art"]
-image: img/fractal.png
+image: img/micrones/47.jpg
 ---
 
 # esto-importa-img

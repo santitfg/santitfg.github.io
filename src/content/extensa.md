@@ -2,7 +2,7 @@
 date: "2022-12-14"
 title: "extensa 22 (DEMO)"
 tags: ["es", "hydra", "programacion"]
-image: img/extensa/caratula.jpg
+image: img/extensa/portada.jpg
 ---
 
 # extensa
