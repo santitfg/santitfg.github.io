@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "gatsby";
-import {useState} from "react"; 
-import logoGitLab from "../images/gitlab-logo-500.png";
-import logoGiHub from "../images/github-mark.svg";
-import icono from "../images/icon.png";
-
+import { useState } from "react";
+import logoGitLab from "../assets/images/gitlab-logo-500.png";
+import logoGiHub from "../assets/images/github-mark.svg";
+import logoIG from "../assets/images/Instagram_Glyph_Gradient.png";
+import icono from "../assets/images/icon.png";
 
 // en caso de tener scrollbar, la barra se achica, deberia hacer algun cambio para que esto no pase, pero no es prioritario en este momento
 const Navbar = () => {
   // variable algo tosca para que el menu hamburguesa comience cerrado si la pantalla es sm sino estaria abierto y seria el menu comun
   //por ahi tendria que desacoplar el nabvar largo y el menu en sm
-  var estadoInicial=false; 
+  var estadoInicial = false;
   // if(window.innerWidth<=640)estadoInicial=true;
 
   const [estadoMenuHamburguesa, setMenuHamburguesa] = useState(estadoInicial);
@@ -27,8 +27,7 @@ const Navbar = () => {
           <div className="flex justify-between  ">
             <Link to="/" className="p-4  font-bold ">
               {/* <span className=" text-2xl">ICO</span> */}
-              <img src={icono} alt="icono"  className="w-14 h-14"/>
-
+              <img src={icono} alt="icono" className="w-14 h-14" />
             </Link>
             <button
               onClick={toggleHamburguesa}
@@ -85,12 +84,20 @@ const Navbar = () => {
           }
         >
           <a
+            href="https://www.instagram.com/elsonidodelascosas/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
+          >
+            <img src={logoIG} alt="Instagram" className="w-10 h-10" />
+          </a>
+          <a
             href="https://gitlab.com/stfg.prof"
             target="_blank"
             rel="noopener noreferrer"
             className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
           >
-            <img src={logoGitLab} alt="Gitlab" className="w-10 h-10"/>
+            <img src={logoGitLab} alt="Gitlab" className="w-10 h-10" />
           </a>
           <a
             href="https://github.com/santitfg"
@@ -98,7 +105,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
           >
-            <img src={logoGiHub} alt="Github"  className="w-10 h-10"/>
+            <img src={logoGiHub} alt="Github" className="w-10 h-10" />
           </a>
         </ul>
       </nav>

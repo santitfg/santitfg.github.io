@@ -1,9 +1,13 @@
 ---
-date: "2022-11-24"
-title: "DEMO Hydra"
+date: "2022-12-14"
+title: "extensa 22 (DEMO)"
 tags: ["es", "hydra", "programacion"]
-image: img/mano.jpg
+image: img/extensa/caratula.jpg
 ---
+
+# extensa
+<!-- ## prototipo dentro
+## proyecto de investigacion que busca acercar el cuerpo a la interaccion con las computadoras  -->
 
 # [Demo aplicacion web](https://santitfg.github.io/hydra-hand) 
 ## Basada en [Hydra](https://hydra.ojack.xyz/) y [Mediapipe](https://google.github.io/mediapipe/solutions/hands.html)

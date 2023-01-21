@@ -1,13 +1,26 @@
 ---
-date: "2022-11-23"
+date: "2022-10-16"
 createdat: ""
 title: "improvisaciones en el espacio latente Presentación en el festival lupear"
 tags: ["es", "visuales", "arte"]
-image: img/mano.jpg
+image: img/ast-lupear/portada.jpg
 layout: "template"
 
 ---
+# "improvisaciones en el espacio latente" [AudioStellar](https://audiostellar.xyz/)
+## Presentación en Tecnopolis, laboratorio de Artes Electronicas | Festival Lupear.
 
-# sarcastico
+<br>
 
-https://www.youtube.com/watch?v=kZhcpq4R4c0
+`youtube:https://www.youtube.com/watch?v=kZhcpq4R4c0`
+<br>
+Equipo:
+
+musicxs:
+Leandro Garber
+Luca Belloti
+Dai Perséfone Miauro
+
+visuales:
+Ramiro Arsanto (Pelol)
+Santiago Fernández
