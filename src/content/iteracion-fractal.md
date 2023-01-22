@@ -23,11 +23,11 @@ algunas de estas imagenes fueron exibihidas en Come out & Play (24/11/22) - Espa
 ![fullcolor](img/seleccion-shaders/fullcolor.jpg)
 --------
 ## [Aracne](https://santitfg.github.io/seleccion-shaders/aracne)
-###  shader realizados en el curso de sol Sarratea computando visiones del caos, derviados desde los [el fractal kotch](https://lashaderwiki.solsarratea.world/cursos/tematicos/computando-visiones-del-caos-en-glsl-por-cceba-media-lab/descripcion-sobre-las-clases/clase-1)
+###  shader realizados en el curso de sol Sarratea computando visiones del caos, derviados desde [el fractal kotch](https://lashaderwiki.solsarratea.world/cursos/tematicos/computando-visiones-del-caos-en-glsl-por-cceba-media-lab/descripcion-sobre-las-clases/clase-1)
 ![aracne](img/seleccion-shaders/aracne.jpg)
 --------
 ## [Aracne 2](https://santitfg.github.io/seleccion-shaders/aracne-2)
-###  shader realizados en el curso de sol Sarratea computando visiones del caos, derviados desde los [el fractal kotch](https://lashaderwiki.solsarratea.world/cursos/tematicos/computando-visiones-del-caos-en-glsl-por-cceba-media-lab/descripcion-sobre-las-clases/clase-1)
+###  shader realizados en el curso de sol Sarratea computando visiones del caos, derviados desde [el fractal kotch](https://lashaderwiki.solsarratea.world/cursos/tematicos/computando-visiones-del-caos-en-glsl-por-cceba-media-lab/descripcion-sobre-las-clases/clase-1)
 ![aracne-2](img/seleccion-shaders/aracne-2.jpg)
 --------
 ## [Pulso](https://santitfg.github.io/seleccion-shaders/pulso)

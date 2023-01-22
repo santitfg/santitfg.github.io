@@ -24,7 +24,7 @@ export const Head = ({ data,pageContext }) => {
   <title>{data.markdownRemark.frontmatter.title}</title>
 
   <meta property="og:title" content={data.markdownRemark.frontmatter.title} />
-  <meta property="og:image" content={data.markdownRemark.frontmatter.image.childImageSharp.gatsbyImageData} />
+  <meta property="og:image" content={"https://santitfg.github.io"+data.markdownRemark.frontmatter.image.childImageSharp.gatsbyImageData.images.fallback.src} />
   <meta property="og:url" content={"https://santitfg.github.io"+data.markdownRemark.fields.slug} />
   <meta property="og:type" content="post" />
   <meta name="og:description" content={"post de santi fecha de contenido: "+data.markdownRemark.frontmatter.date} />

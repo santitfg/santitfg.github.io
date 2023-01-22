@@ -47,7 +47,15 @@ const Navbar = () => {
             <li>
               <Link
                 to="/about"
-                className="block mt-4 sm:inline-block sm:mt-0 text-teal gradiente-link  mr-4"
+                className="block mt-4"
+              >
+                Sobre mi
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                className="block mt-4"
               >
                 Sobre mi
               </Link>
@@ -56,13 +64,13 @@ const Navbar = () => {
           {/* por comodidad hardcodeo este navbar duplicando codigo en otra ocasion agregare un windows en el client side o tomare otra estrategia */}
           <ul
             className={
-              "p-4 text-center text-2xl font-bold sm:ml-10 hidden  sm:flex"
+              " text-center text-2xl font-bold  ml-16 hidden  sm:flex  items-center"
             }
           >
             <li>
               <Link
                 to="/about"
-                className="block mt-4 sm:inline-block sm:mt-0 text-teal gradiente-link  mr-4"
+                className="inline-block  mr-4"
               >
                 Sobre mi
               </Link>
@@ -107,14 +115,14 @@ const Navbar = () => {
         {/* hardcodeo duplicando seccion (usar una func ??*/}
         <ul
           className={
-            "p-4 text-center text-2xl font-bold  hidden sm:flex sm:justify-center"
+            " hidden sm:flex  items-center "
           }
         >
           <a
             href="https://www.instagram.com/elsonidodelascosas/"
             target="_blank"
             rel="noopener noreferrer"
-            className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
+            className="inline-block  mr-4"
           >
             <img src={logoIG} alt="Instagram" className="w-10 h-10" />
           </a>
@@ -122,7 +130,7 @@ const Navbar = () => {
             href="https://gitlab.com/stfg.prof"
             target="_blank"
             rel="noopener noreferrer"
-            className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
+            className="inline-block  mr-4"
           >
             <img src={logoGitLab} alt="Gitlab" className="w-10 h-10" />
           </a>
@@ -130,7 +138,7 @@ const Navbar = () => {
             href="https://github.com/santitfg"
             target="_blank"
             rel="noopener noreferrer"
-            className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
+            className="inline-block mr-4"
           >
             <img src={logoGiHub} alt="Github" className="w-10 h-10" />
           </a>
