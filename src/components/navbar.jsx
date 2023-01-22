@@ -10,7 +10,7 @@ import icono from "../assets/images/icon.png";
 const Navbar = () => {
   // variable algo tosca para que el menu hamburguesa comience cerrado si la pantalla es sm sino estaria abierto y seria el menu comun
   //por ahi tendria que desacoplar el nabvar largo y el menu en sm
-  var estadoInicial = false;
+  var estadoInicial = true;
   // if(window.innerWidth<=640)estadoInicial=true;
 
   const [estadoMenuHamburguesa, setMenuHamburguesa] = useState(estadoInicial);
@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <>
       {/* justify-around  items-center justify-between flex*/}
-      <nav className=" sm:flex flex-wrap  pb-4 pt-8  md:px-8 lg:px-10 justify-between">
+      <nav className=" sm:flex flex-wrap pt-3 md:pb-4 md:pt-8  md:px-8 lg:px-10 justify-between">
         <div className="block sm:flex ">
           <div className="flex justify-between  ">
             <Link to="/" className="p-4  font-bold ">
@@ -36,29 +36,13 @@ const Navbar = () => {
               {estadoMenuHamburguesa ? "MENU" : "X"}
             </button>
           </div>
-
+          {/* la logica en vez de que el boton sea sm:hiden seria sm:flex en caso de poder setear el menu en true segun el estado */}
           <ul
             className={
               "p-4 text-center text-2xl font-bold sm:ml-10 " +
-              (estadoMenuHamburguesa ? " hidden" : "block sm:flex")
+              (estadoMenuHamburguesa ? " hidden" : "block sm:hidden")
             }
           >
-            {/* <li>
-              <Link
-                to="/tags/arte/"
-                className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4 "
-              >
-                haceres
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/tags/programacion"
-                className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
-              >
-                programacion
-              </Link>
-            </li> */}
             <li>
               <Link
                 to="/about"
@@ -67,20 +51,62 @@ const Navbar = () => {
                 Sobre mi
               </Link>
             </li>
-            {/* <li>
+          </ul>
+          {/* por comodidad hardcodeo este navbar duplicando codigo en otra ocasion agregare un windows en el client side o tomare otra estrategia */}
+          <ul
+            className={
+              "p-4 text-center text-2xl font-bold sm:ml-10 hidden  sm:flex"
+            }
+          >
+            <li>
               <Link
-                to="/tags"
-                className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
+                to="/about"
+                className="block mt-4 sm:inline-block sm:mt-0 text-teal gradiente-link  mr-4"
               >
-                tags
+                Sobre mi
               </Link>
-            </li> */}
+            </li>
           </ul>
         </div>
+        {/* por comodidad hardcodeo este navbar duplicando codigo en otra ocasion agregare un windows en el client side o tomare otra estrategia */}
+
         <ul
           className={
             "p-4 text-center text-2xl font-bold " +
-            (estadoMenuHamburguesa ? " hidden" : "flex justify-center")
+            (estadoMenuHamburguesa
+              ? " hidden"
+              : "flex justify-center sm:hidden")
+          }
+        >
+          <a
+            href="https://www.instagram.com/elsonidodelascosas/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
+          >
+            <img src={logoIG} alt="Instagram" className="w-10 h-10" />
+          </a>
+          <a
+            href="https://gitlab.com/stfg.prof"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
+          >
+            <img src={logoGitLab} alt="Gitlab" className="w-10 h-10" />
+          </a>
+          <a
+            href="https://github.com/santitfg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
+          >
+            <img src={logoGiHub} alt="Github" className="w-10 h-10" />
+          </a>
+        </ul>
+        {/* hardcodeo duplicando seccion (usar una func ??*/}
+        <ul
+          className={
+            "p-4 text-center text-2xl font-bold  hidden sm:flex sm:justify-center"
           }
         >
           <a
@@ -113,3 +139,33 @@ const Navbar = () => {
   );
 };
 export default Navbar;
+
+{
+  /* <li>
+              <Link
+                to="/tags"
+                className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
+              >
+                tags
+              </Link>
+            </li> */
+}
+
+{
+  /* <li>
+              <Link
+                to="/tags/arte/"
+                className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4 "
+              >
+                haceres
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/tags/programacion"
+                className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
+              >
+                programacion
+              </Link>
+            </li> */
+}
