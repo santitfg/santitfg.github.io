@@ -21,5 +21,22 @@ Busco combinar mis saberes de programación orientados al LiveCoding con prácti
 
 export default IndexPage;
 
-export const Head = () => <title>About</title>;
+export const Head = () => {
+  return  <>
+    <title>Acerca de Santiago Fernandez</title>
 
+    <meta
+      name="description"
+      content="Portfolio de Santiago Fernandez, orientado principalmente a la difusion de trabajos artisticos de ilustracion y programacion creativa"
+    />
+
+    <meta property="og:title" content="Acerca de Santiago Fernandez" />
+    {/* <meta property="og:image" content={metaImg} />
+    <meta property="og:url" content="https://santitfg.github.io/" />
+    <meta property="og:type" content="website" /> */}
+    <meta
+      name="og:description"
+      content="Portfolio de Santiago Fernandez, orientado principalmente a la difusion de trabajos artisticos de ilustracion y programacion creativa"
+    />
+  </>;
+};

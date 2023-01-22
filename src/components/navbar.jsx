@@ -7,6 +7,7 @@ import logoIG from "../assets/images/Instagram_Glyph_Gradient.png";
 import icono from "../assets/images/icon.png";
 
 // en caso de tener scrollbar, la barra se achica, deberia hacer algun cambio para que esto no pase, pero no es prioritario en este momento
+//agregar un index z para que el menu hamburguesa en mobile se superponga al conenido y no lo desplace al hacerse visible
 const Navbar = () => {
   // variable algo tosca para que el menu hamburguesa comience cerrado si la pantalla es sm sino estaria abierto y seria el menu comun
   //por ahi tendria que desacoplar el nabvar largo y el menu en sm
@@ -22,7 +23,7 @@ const Navbar = () => {
   return (
     <>
       {/* justify-around  items-center justify-between flex*/}
-      <nav className=" sm:flex flex-wrap pt-3 md:pb-4 md:pt-8  md:px-8 lg:px-10 justify-between">
+      <nav className=" sm:flex flex-wrap pt-3 mx-12 md:mx-3 md:pb-4 md:pt-8  md:px-8 lg:px-10 justify-between">
         <div className="block sm:flex ">
           <div className="flex justify-between  ">
             <Link to="/" className="p-4  font-bold ">
@@ -140,32 +141,3 @@ const Navbar = () => {
 };
 export default Navbar;
 
-{
-  /* <li>
-              <Link
-                to="/tags"
-                className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
-              >
-                tags
-              </Link>
-            </li> */
-}
-
-{
-  /* <li>
-              <Link
-                to="/tags/arte/"
-                className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4 "
-              >
-                haceres
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/tags/programacion"
-                className="block mt-4 sm:inline-block sm:mt-0 text-teal   mr-4"
-              >
-                programacion
-              </Link>
-            </li> */
-}
