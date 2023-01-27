@@ -6,7 +6,9 @@
 # [Portfolio web](https://santitfg.github.io/) 
 
 
-originalmente me inscribi Front end Academy - 2022 para volver a tener practica en el desarrollo web y tener alguan certificacion de mis saberes, siendo que los contenidos vistos en el curso abarcaban un nivel inicial. Decidi entregar este portoflio que es mi proyecto personal de vacaciones. desarrollando una web a partir de aprender a utilizar Gatsby con  React y graphQl y para gestionar mas facilmente el CSS Tailwind.
+originalmente me inscribi en Argentina Programa | Front end Academy - 2022 | para volver a tener practica en el desarrollo web y a su vez tener alguan certificacion de mis saberes, no teninedo experiencia formal como desarrollador web, quizas este porfolio escape a los contenidos del curso.
+
+Igualmente Decidi entregarlo ya que es mi proyecto personal de vacaciones. desarrollando una web a partir de aprender a utilizar Gatsby con  React y graphQl y gestionar el CSS con el framework de Tailwind.
 
 decidi utilizar estas tecnologias para poder tener un sitio tipo blog que me permitiera generar rutas dinamicas a partir de archivos markdown.
 
