@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="icon" src="[./assets/images/icon.png](https://santitfg.github.io/static/icon-fd6c8b170dc6477d570b388577bef440.png)" width="60" />
+    <img alt="icon" src="https://raw.githubusercontent.com/santitfg/santitfg.github.io/portfolio/src/assets/images/icon.png" width="60" />
 
 </p>
 
