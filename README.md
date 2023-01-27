@@ -3,7 +3,7 @@
 
 </p>
 
-# Portfolio web 
+# [Portfolio web](https://santitfg.github.io/) 
 
 
 originalmente me inscribi Front end Academy - 2022 para volver a tener practica en el desarrollo web y tener alguan certificacion de mis saberes, siendo que los contenidos vistos en el curso abarcaban un nivel inicial. Decidi entregar este portoflio que es mi proyecto personal de vacaciones. desarrollando una web a partir de aprender a utilizar Gatsby con  React y graphQl y para gestionar mas facilmente el CSS Tailwind.
