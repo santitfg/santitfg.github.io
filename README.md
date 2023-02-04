@@ -16,9 +16,7 @@ en el mismo utilizo una configuracion de CSS de Kite (ixkaito@gmail.com) con lic
 y en paralelo las fuentes que utilizo son del grupo de tipografia latinoamericana omnibus-type.
 utilizando las tipografias [Chivo](https://www.omnibus-type.com/fonts/chivo/) y [Leluja](https://www.omnibus-type.com/fonts/leluja-original/) Original de licencias de fuente abierta SIL 
 
-## desde ya muchas gracias y disculpen si no correponde esta entrega.
-  
-
+## desde ya muchas gracias
 
 
 PD: este porfolio actualmente fue migrado a [Next](https://github.com/santitfg/next-blog)
