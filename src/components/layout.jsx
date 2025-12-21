@@ -13,7 +13,7 @@ const Layout = (props) => {
 
       {props.children}
       
-      <footer  className="container mx-auto text-justify" >
+      <footer lassName="container mx-auto text-justify" >
       <div className="p-4"></div>
 
       <hr className="border-solid border-top-2 border-principal "/>

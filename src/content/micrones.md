@@ -5,20 +5,14 @@ tags: ["es", "arte", "ilustracion"]
 image: img/micrones/47.jpg
 ---
 
-# esto-importa-img
+![Alt ejemplo-0](img/micrones/07.jpg)
+![Alt ejemplo-0](img/micrones/02.jpg)
+![Alt ejemplo-0](img/micrones/03.jpg)
+![Alt ejemplo-0](img/micrones/04.jpg)
 
-<div class="columns-3 ">
-![Alt ejemplo-0](img/micrones/47.jpg)
-![Alt ejemplo-0](img/micrones/47.jpg)
-![Alt ejemplo-0](img/micrones/47.jpg)
-![Alt ejemplo-0](img/micrones/47.jpg)
-![Alt ejemplo-0](img/micrones/47.jpg)
-![Alt ejemplo-0](img/micrones/47.jpg)
-![Alt ejemplo-0](img/micrones/47.jpg)
-![Alt ejemplo-0](img/micrones/47.jpg)
-![Alt ejemplo-0](img/micrones/47.jpg)
-![Alt ejemplo-0](img/micrones/47.jpg)
-![Alt ejemplo-0](img/micrones/47.jpg)
-![Alt ejemplo-0](img/micrones/47.jpg)
 
-</div>
+
+
+
+
+

@@ -9,7 +9,7 @@ export default function BlogPostTemplate({
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout titulo={frontmatter.title}>
-      <main className=" w-9/12 md:container mx-auto text-justify ">
+      <main className=" w-9/12 container mx-auto text-justify ">
         {/* <h2>{frontmatter.date}</h2> */}
         <div
           className=" unreset"
