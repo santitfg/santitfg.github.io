@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksantitfg_github_io=self.webpackChunksantitfg_github_io||[]).push([[342],{2196:function(e,t,a){a.r(t);var l=a(6540),n=a(589),r=a(1141);t.default=e=>{let{pageContext:t,data:a}=e;return l.createElement(r.A,null,l.createElement("main",null,l.createElement("div",{className:"grid grid-cols-1 lg:grid-cols-2 gap-4"},a.allMarkdownRemark.edges.map(e=>{let{node:t}=e;return l.createElement(n.A,{data:t,key:t.fields.slug})}))))}}}]);
+//# sourceMappingURL=component---src-templates-template-tags-jsx-f01c1c9517a70b0aed0c.js.map
