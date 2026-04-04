@@ -2,6 +2,8 @@ import React from "react";
 
 import "../styles/global.css";
 import Navbar from "./navbar";
+import ImageModal from "./imagemodal";
+
 const Layout = (props) => {
   return (
     <>
@@ -12,6 +14,7 @@ const Layout = (props) => {
       {/* <h1 className="bg-[#1da1f2] text-white"> {props.titulo}</h1> */}
 
       {props.children}
+      <ImageModal />
       
       <footer lassName="container mx-auto text-justify" >
       <div className="p-4"></div>

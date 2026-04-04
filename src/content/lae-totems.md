@@ -23,14 +23,3 @@ Sonido: Leandro Garber, Dai Miauro.
 
 26/8/23 Laboratorio de Artes Electrónicas, Tecnópolis
 
-<div class="galeria galeria-2">
-
-![TSE Totems](img/tse-totems/lae_totems.jpg)
-
-![TSE Totems](img/tse-totems/lae_totems2.jpg)
-
-![TSE Totems](img/tse-totems/lae_totems3.jpg)
-
-![TSE Totems](img/tse-totems/lae_totems4.jpg)
-
-</div>

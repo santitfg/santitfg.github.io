@@ -31,29 +31,17 @@ Sonido: Leandro Garber, Agustin Spinetto.
 16/06/25 Real Conservatorio Superior de Música, Madrid  
 26/06/25 [Kasko](https://www.kasko.ch/), Basel
 
-<div class="galeria galeria-3">
-<div class="col-2">
+<div class="galeria ">
 
-![Sónar+D AudioStellar](img/sonar/Sonar+D_AudioStellar_Roncca_20250612-7716.jpg)
 
-</div>
-<div class="row-2">
+![Conferencia performática con visuales proyectadas en el Stage+D](img/sonar/Stage_D_Audiostellar_NereaColl_20250612_013.jpg)
 
-![Stage+D AudioStellar](img/sonar/Stage+D_Audiostellar_NereaColl_20250612_001.JPG)
+![Vista del escenario del Stage+D con performer y público](img/sonar/Sonar_D_AudioStellar_Roncca_20250612-7719.png)
 
-</div>
+![Performers del colectivo AudioStellar en acción durante el Sónar+D](img/sonar/Sonar_D_AudioStellar_Roncca_20250612-7810.jpg)
 
-![Sónar+D AudioStellar](img/sonar/Sonar+D_AudioStellar_Roncca_20250612-7719.jpg)
 
-![Sónar+D AudioStellar](img/sonar/Sonar+D_AudioStellar_Roncca_20250612-7741.jpg)
-
-![Sónar+D AudioStellar](img/sonar/Sonar+D_AudioStellar_Roncca_20250612-7810.jpg)
-
-![Stage+D AudioStellar](img/sonar/Stage+D_Audiostellar_NereaColl_20250612_013.JPG)
-
-![Stage+D AudioStellar](img/sonar/Stage+D_Audiostellar_NereaColl_20250612_014.JPG)
-
-![Stage+D AudioStellar](img/sonar/Stage+D_Audiostellar_NereaColl_20250612_018.JPG)
+![Cierre de Trastornos Sonoros Emergentes en el Stage+D](img/sonar/Stage_D_Audiostellar_NereaColl_20250612_014.jpg)
 
 </div>
 

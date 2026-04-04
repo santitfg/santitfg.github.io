@@ -25,12 +25,14 @@ Sonido: Leandro Garber, Dai Miauro.
 9 funciones, octubre 2024  
 Sala Inmersiva, Centro Cultural Kirchner
 
-<div class="galeria galeria-3">
+<div class="galeria ">
 
-![CCK AudioStellar](img/cck/Marco%20de%20imagen.jpg)
+![Proyecciones inmersivas al inicio de la performance en la Sala Inmersiva del CCK](img/cck/inicio_cck.jpg)
 
-![CCK AudioStellar](img/cck/luki_cck.jpg)
+![Momento cumbre de la performance con proyecciones de partículas envolventes](img/cck/peak_cck.jpg)
 
-![CCK AudioStellar](img/cck/mati_cck.jpg)
+![Performers interactuando con visuales proyectadas en la Sala Inmersiva](img/cck/mid_cck.jpg)
+
+![Cierre de la performance con visuales generativas cubriendo el espacio](img/cck/end_cck.png)
 
 </div>
