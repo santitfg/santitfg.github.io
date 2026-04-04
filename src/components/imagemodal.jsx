@@ -1,6 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
 import { createPortal } from "react-dom";
 
+const isImageUrl = (value) => {
+  if (!value) return false;
+  return /\.(avif|bmp|gif|jpe?g|png|svg|tiff?|webp)(\?.*)?(#.*)?$/i.test(value);
+};
+
 const ImageModal = () => {
   const [open, setOpen] = useState(false);
   const [src, setSrc] = useState("");
@@ -31,9 +36,20 @@ const ImageModal = () => {
       const img = target && target.closest ? target.closest("img") : null;
       if (!img) return;
 
-      // If the image is wrapped in a link, use that href as the modal source.
+      // Only handle images rendered inside markdown/html post content.
+      const isContentImage = !!img.closest(".unreset");
+      if (!isContentImage) return;
+
+      // If the image is wrapped in a link:
+      // - keep normal navigation for non-image links
+      // - open modal only for image links
       const parentLink = img.closest("a");
-      const imageSrc = parentLink ? parentLink.href : img.src;
+      if (parentLink) {
+        const href = parentLink.getAttribute("href") || "";
+        if (!isImageUrl(href)) return;
+      }
+
+      const imageSrc = parentLink ? parentLink.href : img.currentSrc || img.src;
       if (!imageSrc) return; // defensive: avoid opening modal with empty source
 
       if (parentLink) e.preventDefault();
