@@ -7,6 +7,7 @@
 @import "./components.css";
 
 @import "./unreset.scss";
+@import "./galeria.scss";
 @import "./gradientes.scss";
 /* @tailwind utilities; */
 @import "./utilities.css";

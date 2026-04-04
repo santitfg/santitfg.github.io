@@ -1,0 +1,81 @@
+/* Galería de imágenes para usar en markdown con HTML */
+
+.unreset {
+
+  /* Galería base: auto-fill responsive */
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+
+    .gatsby-resp-image-wrapper,
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: 0 !important;
+    }
+
+    .gatsby-resp-image-wrapper {
+      display: block !important;
+    }
+
+    /* Cada hijo directo ocupa toda su celda */
+    > * {
+      overflow: hidden;
+    }
+  }
+
+  /* Columnas fijas */
+  .galeria-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .galeria-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .galeria-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Mosaico: item que ocupa 2 columnas o 2 filas */
+  .col-2 {
+    grid-column: span 2;
+  }
+
+  .row-2 {
+    grid-row: span 2;
+
+    .gatsby-resp-image-wrapper,
+    img {
+      height: 100%;
+    }
+  }
+
+  .col-2.row-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  /* Responsive: en mobile forzar 1 columna */
+  @media (max-width: 640px) {
+    .galeria {
+      grid-template-columns: 1fr;
+    }
+
+    .galeria-2,
+    .galeria-3,
+    .galeria-4 {
+      grid-template-columns: 1fr;
+    }
+
+    .col-2,
+    .row-2,
+    .col-2.row-2 {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+  }
+}
