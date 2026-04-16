@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <>
       {/* justify-around  items-center justify-between flex*/}
-      <nav className=" sm:flex flex-wrap pt-3 mx-12 md:mx-3 md:pb-4 md:pt-8  md:px-8 lg:px-10 justify-between">
+      <nav className="sm:flex flex-wrap pt-3 md:pb-4 md:pt-8 px-4 md:px-0 justify-between max-w-[100%] md:max-w-[75%] mx-auto">
         <div className="block sm:flex ">
           <div className="flex justify-between  ">
             <Link to="/" className="p-4  font-bold ">

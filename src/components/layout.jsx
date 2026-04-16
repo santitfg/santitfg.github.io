@@ -19,7 +19,6 @@ const Layout = (props) => {
       <footer lassName="container mx-auto text-justify" >
       <div className="p-4"></div>
 
-      <hr className="border-solid border-top-2 border-principal "/>
 
       <div className="p-6"></div>
       </footer>
